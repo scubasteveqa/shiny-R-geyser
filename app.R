@@ -10,7 +10,7 @@
 library(shiny)
 library(reticulate)
 
-python_version <- py_config()$version
+python_version <- as.character(py_config()$version)
 cat("Python version:", python_version, "\n")
 
 # Define UI for application that draws a histogram
